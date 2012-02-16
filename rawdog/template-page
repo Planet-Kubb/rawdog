@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>__river_name__</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+
+	<h1>__river_name__</h1>
+
+        <div class="btn-group pages">
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Go to <span class="caret"></span></a>
+        __paged_output_pages__
+        </div>
+
+	<div class="accordion" id="allitems">
+	<!-- now the items iterater takes over -->
+
+__items__
+
+	<!-- now the items iterater is done -->
+	</div>
+
+	<div class="pages">__paged_output_pages__</div>
+
+	<h6>rawdog __version__: __num_items__ items from __num_feeds__ feeds</h6>
+
+</div> <!-- container-fluid -->
+
+<script src="/js/bootstrap-transition.js"></script>
+<script src="/js/bootstrap-dropdown.js"></script>
+<script src="/js/bootstrap-collapse.js"></script>
+<script>$(".collapse").collapse()</script>
+
+<!-- Piwik --> 
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.thingelstad.com/" : "http://stats.thingelstad.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 25);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://stats.thingelstad.com/piwik.php?idsite=25" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+</body>
+
+</html>

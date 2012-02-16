@@ -1,0 +1,10 @@
+logs
+*.pyc
+rawdog/state
+rawdog/feeds/*
+rawdog/status-log
+public_html/index*.html
+public_html/opml.xml
+public_html/rss20.xml
+public_html/foafroll.xml
+public_html/status-log.html

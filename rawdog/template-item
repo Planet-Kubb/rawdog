@@ -1,0 +1,22 @@
+		<!-- begin item -->
+		<div class="accordion-group feed-__feed_hash__ feed-__feed_id__">
+			<div class="accordion-heading">
+				<a class="accordion-toggle" data-toggle="collapse" data-parent="#allitems" href="#item__hash__">__name__ <i class="icon-chevron-right"></i> __title_no_link__</a>
+			</div> <!-- accordion-heading -->
+			<div id="item__hash__" class="accordion-body collapse in">
+				<div class="itemdescription accordion-inner">
+					__if_description__ __description__ __endif__
+					<br/>
+					<br/>
+					<h6><i class="icon-calendar"></i> __date__</h6>
+					<h6><i class="icon-bookmark"></i> __title__ __if_author__by __author____endif__ __if_date__at __date____endif__</h6>
+					<h6><i class="icon-share"></i>
+	<a href="javascript:q='__url__';if(document.getSelection){d=document.getSelection();}else{d='';};p='__title_no_link__';void(open('https://pinboard.in/add?url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p),'Pinboard','toolbar=no,width=700,height=350'));">Add to Pinboard</a>, 
+	<a href="javascript:q='__url__';if(document.getSelection){d=document.getSelection();}else{d='__title_no_link__';};void(open('https://twitter.com/share?url='+encodeURIComponent(q)+'&text='+encodeURIComponent(d), 'Twitter','toolbar=no'));">Send to Twitter</a>,
+	<a href="javascript:q='__url__';if(document.getSelection){d=document.getSelection();}else{d='__feed_title_no_link__';};t='__title_no_link__';void(open('http://thingelstad.com/wp-admin/press-this.php?u='+encodeURIComponent(q)+'&t='+encodeURIComponent(t)+'&s='+encodeURIComponent(d)+'&v=2'));">Write at thingelstad.com</a>
+					</h6>
+					
+				</div> <!-- accordion-inner -->
+			</div> <!-- accordion-body -->
+		</div> <!-- accordion-group -->
+		<!-- end item -->
