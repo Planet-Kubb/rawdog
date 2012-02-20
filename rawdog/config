@@ -281,8 +281,22 @@ changeconfig true
 #feed 3h http://proxyfeed.example.com/proxied.rss http_proxy=http://localhost:1234/
 #feed 3h http://dupsfeed.example.com/duplicated.rss allowduplicates=true
 
-feed 24h http://en.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia Kubb Page
+feed 4h http://en.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (English) Kubb Page
+feed 4h http://de.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Deutsch) Kubb Page
+feed 4h http://it.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Italiano) Kubb Page
+feed 4h http://es.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Espanol) Kubb Page
+feed 4h http://fr.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Francais) Kubb Page
+feed 4h http://pl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Polski) Kubb Page
+feed 4h http://nl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Nederlands) Kubb Page
+feed 4h http://no.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    define_name Wikipedia (Norsk) Kubb Page
 feed 3h http://gdata.youtube.com/feeds/base/videos?q=kubb+game&orderby=published&alt=rss&client=ytapi-youtube-search&v=2
     define_name YouTube Kubb Videos
 feed 3h http://www.google.com/alerts/feeds/08141827436068576664/12388764256403020306
@@ -305,4 +319,14 @@ feed 3h http://vimeo.com/channels/kubb/videos/rss
     define_name Vimeo Kubb Channel
 feed 3h http://feeds.pinboard.in/rss/t:kubb
     define_name Pinboard Kubb
+feed 3h http://kubbdresden.blogspot.com/feeds/posts/default
+    define_name Kubb in Dresden
+feed 3h http://www.neokubb.org/feed/
+    define_name Northeast Ohio Kubb Club
+feed 1h http://ask.planetkubb.com/feed/qa.rss
+    define_name Ask Planet Kubb
+feed 12h http://thingelstad.com/tag/kubb/feed/
+    define_name thingelstad.com
+feed 12h http://gdata.youtube.com/feeds/api/users/sirkubb/uploads
+    define_name YouTube (SirKubb)
 
