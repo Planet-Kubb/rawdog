@@ -66,19 +66,20 @@ def output_write_files(rawdog, config, articles, article_dates):
 		bits["num_items"] = str(len(rawdog.articles.values()))
 
 		f = StringIO()
-		f.write('<ul class="dropdown-menu paged_output_pages">\n')
+		#f.write('<ul class="dropdown-menu paged_output_pages">\n')
 		for j in range(len(chunks)):
 			latest_date = max([article_dates[a] for a in chunks[j]])
-			f.write('<li>')
-			if i == j:
-				f.write('<b>')
-			f.write('<a href="' + os.path.basename(fns[j]) + '">')
-			f.write(format_time(latest_date, config))
+			#f.write('<li>')
+			#if i == j:
+			#	f.write('<b>')
+			f.write('<a class="btn" href="' + os.path.basename(fns[j]) + '" title="' + format_time(latest_date, config) + '">')
+			#f.write(format_time(latest_date, config))
+			f.write(j+1)
 			f.write('</a>')
-			if i == j:
-				f.write('</b>')
-			f.write('</li>\n')
-		f.write('</ul>\n')
+			#if i == j:
+			#	f.write('</b>')
+			#f.write('</li>\n')
+		#f.write('</ul>\n')
 		bits["paged_output_pages"] = f.getvalue()
 
 		s = fill_template(rawdog.get_template(config), bits)

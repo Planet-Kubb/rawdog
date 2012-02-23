@@ -36,3 +36,22 @@ footer {
           border-radius: 6px;
 }
 
+.day h2 {
+  font-size: 18px;
+  text-align: right;
+}
+
+.feed-item {
+  border-bottom: 2px black solid;
+  margin-bottom: 18px;
+}
+
+.itemdescription {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.pages {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
