@@ -283,20 +283,44 @@ changeconfig true
 
 feed 2h http://en.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (English) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://de.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Deutsch) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://it.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Italiano) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://es.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Espanol) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://fr.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Francais) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://pl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Polski) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://nl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Nederlands) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 2h http://no.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
     define_name Wikipedia (Norsk) Kubb Page
+    define_logo Wikipedia-logo.png
+    define_logo_width 120
+    define_logo_height 120
 feed 1h http://gdata.youtube.com/feeds/base/videos?q=kubb+game&orderby=published&v=2
     define_name YouTube Kubb Videos
     define_logo youtube.png
@@ -305,6 +329,9 @@ feed 1h http://gdata.youtube.com/feeds/base/videos?q=kubb+game&orderby=published
 feed 1h http://www.google.com/alerts/feeds/08141827436068576664/12388764256403020306
     filter hide title "^Feeds for " ; hide description "vocalist"
     define_name Googling Kubb
+    define_logo google.png
+    define_logo_width 127
+    define_logo_height 40
 feed 3h http://kubbklubb.wordpress.com/feed/
     define_name Kubb Klubb
 feed 3h http://kubbcollective.com/feed/
@@ -315,6 +342,9 @@ feed 3h http://feeds.feedburner.com/southernillinoiskubb
     define_name Southern Illinois Kubb
 feed 3h http://feeds.feedburner.com/IllinoisKubbLeague
     define_name Illinois Kubb League
+    define_logo illinoiskubb.png
+    define_logo_width 95
+    define_logo_height 199    
 feed 3h http://desmoineskubb.com/blog.rss
     define_name Des Moines Kubb
     define_logo dsmkubblogo.jpg
@@ -326,14 +356,26 @@ feed 1h http://vimeo.com/channels/kubb/videos/rss
     define_name Vimeo Kubb Channel
 feed 1h http://feeds.pinboard.in/rss/t:kubb
     define_name Pinboard Kubb
+    define_logo pinboard.png
+    define_logo_width 72
+    define_logo_height 72
 feed 3h http://kubbdresden.blogspot.com/feeds/posts/default
     define_name Kubb in Dresden
 feed 3h http://www.neokubb.org/feed/
     define_name Northeast Ohio Kubb Club
+    define_logo neokc.png
+    define_logo_width 128
+    define_logo_height 128
 feed 10m http://ask.planetkubb.com/feed/qa.rss
     define_name Ask Planet Kubb
+    define_logo kubb-icon_72.png
+    define_logo_width 72
+    define_logo_height 72
 feed 10m http://wiki.planetkubb.com/w/index.php?title=Special:NewPages&feed=atom&hideliu=&hidepatrolled=&hidebots=1&hideredirs=1&limit=50&namespace=0
     define_name Planet Kubb Wiki
+    define_logo kubb-icon_72.png
+    define_logo_width 72
+    define_logo_height 72
 feed 3h http://thingelstad.com/tag/kubb/feed/
     define_name thingelstad.com
 feed 3h http://gdata.youtube.com/feeds/base/users/sirkubb/uploads?orderby=published&v=2
