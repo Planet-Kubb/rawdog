@@ -371,11 +371,11 @@ feed 10m http://ask.planetkubb.com/feed/qa.rss
     define_logo kubb-icon_72.png
     define_logo_width 72
     define_logo_height 72
-feed 10m http://wiki.planetkubb.com/w/index.php?title=Special:NewPages&feed=atom&hideliu=&hidepatrolled=&hidebots=1&hideredirs=1&limit=50&namespace=0
-    define_name Planet Kubb Wiki
-    define_logo kubb-icon_72.png
-    define_logo_width 72
-    define_logo_height 72
+#feed 10m http://wiki.planetkubb.com/w/index.php?title=Special:NewPages&feed=atom&hideliu=&hidepatrolled=&hidebots=1&hideredirs=1&limit=50&namespace=0
+    #define_name Planet Kubb Wiki
+    #define_logo kubb-icon_72.png
+    #define_logo_width 72
+    #define_logo_height 72
 feed 3h http://thingelstad.com/tag/kubb/feed/
     define_name thingelstad.com
 feed 3h http://gdata.youtube.com/feeds/base/users/sirkubb/uploads?orderby=published&v=2
@@ -408,4 +408,5 @@ feed 3h http://gdata.youtube.com/feeds/base/users/ValleyKubb/uploads?orderby=pub
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-
+feed 3h http://kubbchucks.com/feed/
+    define_name Kubbchucks
