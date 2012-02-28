@@ -48,8 +48,8 @@ __items__
 			<p><a href="http://wiki.planetkubb.com/wiki/Planet_Kubb:About">Read more...</a></p>
 			
 			<h3>Sites</h3>
-			<p><a href="http://ask.planetkubb.com/" class="btn btn-primary btn-large">Ask Planet Kubb</a></p>
-			<p><a href="http://wiki.planetkubb.com/" class="btn btn-primary btn-large">Planet Kubb Wiki</a></p>
+			<p><a href="http://ask.planetkubb.com/?pk_campaign=Planet-Kubb" class="btn btn-primary btn-large">Ask Planet Kubb</a></p>
+			<p><a href="http://wiki.planetkubb.com/?pk_campaign=Planet-Kubb" class="btn btn-primary btn-large">Planet Kubb Wiki</a></p>
 			
 		</div>
 	</div>
