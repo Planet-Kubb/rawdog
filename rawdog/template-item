@@ -13,6 +13,6 @@ __if_description__ __description__ __endif__
 		<a href="javascript:q='__url__';if(document.getSelection){d=document.getSelection();}else{d='';};p='__title_no_link__';void(open('https://pinboard.in/add?url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p),'Pinboard','toolbar=no,width=700,height=350'));">Add to Pinboard</a>, 
 		<a href="javascript:q='__url__';if(document.getSelection){d=document.getSelection();}else{d='__title_no_link__';};void(open('https://twitter.com/share?url='+encodeURIComponent(q)+'&text='+encodeURIComponent(d), 'Twitter','toolbar=no'));">Send to Twitter</a>
 	</h6>
-			
+<br clear="all">			
 </div>
 <!-- end item -->

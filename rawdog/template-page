@@ -20,9 +20,11 @@
 <div class="container">
 
 	<div class="row">
+		<div class="span12">
 		<header class="jumbotron subhead" id="overview">
 			<img src="/img/160px-Planetkubb-trans.png" align="right" width="160" height="160" /><h1>__river_name__</h1>
 		</header>
+		</div>
 	</div>
 
 	<div class="row">
@@ -42,7 +44,7 @@ __items__
 		</div>
 		
 		<div class="span4">
-			<a href="https://twitter.com/PlanetKubb" class="twitter-follow-button" data-show-count="true">Follow @PlanetKubb</a>
+			<a href="https://twitter.com/PlanetKubb" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @PlanetKubb</a>
 			<h3>About</h3>
 			<p>Welcome to Planet Kubb! This Web site aggregates feeds from all over the Internet so you can keep tabs on everything Kubb related on the web.</p>
 			<p><a href="http://wiki.planetkubb.com/wiki/Planet_Kubb:About">Read more...</a></p>
@@ -50,6 +52,7 @@ __items__
 			<h3>Sites</h3>
 			<p><a href="http://ask.planetkubb.com/?pk_campaign=Planet-Kubb" class="btn btn-primary btn-large">Ask Planet Kubb</a></p>
 			<p><a href="http://wiki.planetkubb.com/?pk_campaign=Planet-Kubb" class="btn btn-primary btn-large">Planet Kubb Wiki</a></p>
+			<p>Trying to name your awesome Kubb team? <strong>Try the <a href="http://name.planetkubb.com/?pk_campaign=Planet-Kubb">Planet Kubb Name Generator</a>!</strong>
 			
 		</div>
 	</div>

@@ -327,7 +327,7 @@ feed 1h http://gdata.youtube.com/feeds/base/videos?q=kubb+game&orderby=published
     define_logo_width 120
     define_logo_height 85
 feed 1h http://www.google.com/alerts/feeds/08141827436068576664/12388764256403020306
-    filter hide title "^Feeds for " ; hide description "vocalist"
+    filter hide title "^Feeds for " ; hide description "vocalist" ; hide description "radio" ; hide description "KHTN-" 
     define_name Googling Kubb
     define_logo google.png
     define_logo_width 127
@@ -366,7 +366,8 @@ feed 3h http://www.neokubb.org/feed/
     define_logo neokc.png
     define_logo_width 128
     define_logo_height 128
-feed 10m http://ask.planetkubb.com/feed/qa.rss
+# feed 10m http://ask.planetkubb.com/feed/qa.rss
+feed 15m http://ask.planetkubb.com/feed/questions.rss
     define_name Ask Planet Kubb
     define_logo kubb-icon_72.png
     define_logo_width 72
