@@ -5,6 +5,12 @@
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="description" content="Planet feed aggregating information about the great game of Kubb!" />
+	<meta property="og:title" content="Planet Kubb" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://world.planetkubb.com/" />
+	<meta property="og:image" content="http://world.planetkubb.com/img/160px-Planetkubb-trans.png" />
+	<meta property="og:site_name" content="Planet Kubb" />
+	<meta property="fb:admins" content="605776057, 266983120056872" />
 	<link href="/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet" />
 	<link href="/css/rivers.css" rel="stylesheet" />
@@ -44,7 +50,8 @@ __items__
 		</div>
 		
 		<div class="span4">
-			<a href="https://twitter.com/PlanetKubb" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @PlanetKubb</a>
+			<p><a href="https://twitter.com/PlanetKubb" class="twitter-follow-button" data-show-count="true" data-size="large">Follow @PlanetKubb</a></p>
+<div class="fb-like" data-href="https://www.facebook.com/PlanetKubb" data-send="false" data-width="260" data-show-faces="true"></div>
 			<h3>About</h3>
 			<p>Welcome to Planet Kubb! This Web site aggregates feeds from all over the Internet so you can keep tabs on everything Kubb related on the web.</p>
 			<p><a href="http://wiki.planetkubb.com/wiki/Planet_Kubb:About">Read more...</a></p>
@@ -65,7 +72,15 @@ __items__
 	</div>
 
 </div> <!-- container -->
-
+<!-- Facebook Stuff -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=266983120056872";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <!-- Twitter Button -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <!-- Piwik --> 

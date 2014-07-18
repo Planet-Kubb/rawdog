@@ -56,14 +56,17 @@ currentonly false
 outputxml ../public_html/rss20.xml
 outputfoaf ../public_html/foafroll.xml
 outputopml ../public_html/opml.xml
-xmltitle         "Kubb River" 
-xmllink           "http://planetkubb.com/")
-xmllanguage       "en"
-xmlurl            "http://planetkubb.com/rss20.xml")
-xmldescription    "Information for Kubb"
-xmlownername     Jamie Thingelstad
-xmlowneremail     jamie@thingelstad.com
-xmlmaxarticles    50
+xmltitle Planet Kubb World
+xmllink http://planetkubb.com/
+xmllanguage en
+xmlurl http://world.planetkubb.com/rss20.xml
+xmldescription Information for Kubb
+xmlownername Jamie Thingelstad
+xmlowneremail jamie@thingelstad.com
+xmlmaxarticles 50
+
+mailto planetkubb-feed@lists.planetkubb.com
+mailfrom noreply@planetkubb.com
 
 statuslogfile status-log
 statusoutputfile ../public_html/status-log.html
@@ -105,7 +108,7 @@ datetimeformat %I:%M %p, %A, %d %B %Y
 # You can define additional strings using "define" in this config file; for
 # example, if you say "define myname Adam Sampson", then "__myname__" will be
 # replaced by "Adam Sampson" in the output.
-define river_name Planet Kubb
+define river_name Planet Kubb World
 template template-page
 
 # Similarly, the template used for each item shown. Use "rawdog -T" to
@@ -177,7 +180,7 @@ numthreads 20
 # are on a slow connection, increase this.
 # (Unlike other times in this file, this will be assumed to be in
 # seconds if no unit is specified.)
-timeout 30s
+timeout 60s
 
 # Whether to ignore timeouts. If this is false, timeouts will be reported as
 # errors; if this is true, rawdog will silently ignore them.
@@ -227,11 +230,11 @@ useids true
 # Note that some feeds use the same link for all their articles; if you specify
 # "link" here, you will probably want to specify the "allowduplicates" feed
 # argument (see below) for those feeds.
-hideduplicates id
+hideduplicates id link
 
 # The period to use for new feeds added to the config file via the -a|--add
 # option.
-newfeedperiod 3h
+newfeedperiod 1h
 
 # Whether rawdog should automatically update this config file (and its
 # internal state) if feed URLs change (for instance, if a feed URL
@@ -273,102 +276,112 @@ changeconfig true
 #	http_proxy http://proxy.example.com:3128/
 #feed 1h http://example.com/feed.rss
 #feed 30m http://example.com/feed2.rss id=newsfront
-#feed 3h http://example.com/feed3.rss keepmin=5
-#feed 3h http://example.com/secret.rss user=bob password=secret
-#feed 3h http://example.com/broken.rss
+#feed 1h http://example.com/feed3.rss keepmin=5
+#feed 1h http://example.com/secret.rss user=bob password=secret
+#feed 1h http://example.com/broken.rss
 #	format text
 #	define_myclass broken
-#feed 3h http://proxyfeed.example.com/proxied.rss http_proxy=http://localhost:1234/
-#feed 3h http://dupsfeed.example.com/duplicated.rss allowduplicates=true
+#feed 1h http://proxyfeed.example.com/proxied.rss http_proxy=http://localhost:1234/
+#feed 1h http://dupsfeed.example.com/duplicated.rss allowduplicates=true
 
-feed 2h http://en.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (English) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://de.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Deutsch) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://it.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Italiano) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://es.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Espanol) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://fr.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Francais) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://pl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Polski) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://nl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Nederlands) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 2h http://no.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
-    define_name Wikipedia (Norsk) Kubb Page
-    define_logo Wikipedia-logo.png
-    define_logo_width 120
-    define_logo_height 120
-feed 1h http://gdata.youtube.com/feeds/base/videos?q=kubb+game&orderby=published&v=2
-    define_name YouTube Kubb Videos
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://www.google.com/alerts/feeds/08141827436068576664/12388764256403020306
-    filter hide title "^Feeds for " ; hide description "vocalist" ; hide description "radio" ; hide description "KHTN-" 
-    define_name Googling Kubb
-    define_logo google.png
-    define_logo_width 127
-    define_logo_height 40
-feed 3h http://kubbklubb.wordpress.com/feed/
+# feed 2h http://en.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (English) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://de.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Deutsch) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://it.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Italiano) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://es.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Espanol) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://fr.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Francais) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://pl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Polski) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://nl.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Nederlands) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# feed 2h http://no.wikipedia.org/w/index.php?title=Kubb&feed=atom&action=history
+    # define_name Wikipedia (Norsk) Kubb Page
+    # define_logo Wikipedia-logo.png
+    # define_logo_width 120
+    # define_logo_height 120
+# 11/27/2012: Commenting this out as it catches too many promotional or spam videos that cannot be
+# reliably filtered out.
+# feed 1h http://gdata.youtube.com/feeds/base/videos?q=kubb+game&orderby=published&v=2
+    # filter hide author "Americoob" ; hide title "Americoob" ; hide author "OfficalMazuPadilla"; hide author "maureen rosado"
+    # define_name YouTube Kubb Videos
+    # define_logo youtube.png
+    # define_logo_width 120
+    # define_logo_height 85
+# feed 1h http://www.google.com/alerts/feeds/08141827436068576664/12388764256403020306
+    # filter hide title "^Feeds for " ; hide description "vocalist" ; hide description "radio" ; hide description "KHTN-" 
+    # define_name Googling Kubb
+    # define_logo google.png
+    # define_logo_width 127
+    # define_logo_height 40
+feed 1h http://kubbklubb.wordpress.com/feed/
     define_name Kubb Klubb
-feed 3h http://kubbcollective.com/feed/
-    define_name Kubb Collective
-feed 3h https://www.google.com/calendar/feeds/kubbcollective%40gmail.com/public/basic
-    define_name Kubb Collective Calendar
-feed 3h http://feeds.feedburner.com/southernillinoiskubb
-    define_name Southern Illinois Kubb
-feed 3h http://feeds.feedburner.com/IllinoisKubbLeague
-    define_name Illinois Kubb League
-    define_logo illinoiskubb.png
-    define_logo_width 95
-    define_logo_height 199    
-feed 3h http://desmoineskubb.com/blog.rss
+# feed 1h http://kubbcollective.com/feed/
+# define_name Kubb Collective
+# feed 1h http://feeds.feedburner.com/southernillinoiskubb
+#     define_name Southern Illinois Kubb
+# feed 1h http://feeds.feedburner.com/IllinoisKubbLeague
+#     define_name Illinois Kubb League
+#     define_logo illinoiskubb.png
+#     define_logo_width 95
+#     define_logo_height 199    
+feed 1h http://desmoineskubb.com/blog.rss
     define_name Des Moines Kubb
     define_logo dsmkubblogo.jpg
     define_logo_width 280
     define_logo_height 188
-feed 1h http://api.flickr.com/services/feeds/groups_pool.gne?id=1876333@N25
-    define_name Flickr Planet Kubb Group
 feed 1h http://vimeo.com/channels/kubb/videos/rss
     define_name Vimeo Kubb Channel
-feed 1h http://feeds.pinboard.in/rss/t:kubb
+feed 3h http://feeds.pinboard.in/rss/t:kubb
     define_name Pinboard Kubb
     define_logo pinboard.png
     define_logo_width 72
     define_logo_height 72
-feed 3h http://kubbdresden.blogspot.com/feeds/posts/default
+feed 3h http://www.metafilter.com/tags/kubb/rss
+    define_name MetaFilter Kubb
+feed 1h http://kubbdresden.blogspot.com/feeds/posts/default
     define_name Kubb in Dresden
-feed 3h http://www.neokubb.org/feed/
+feed 1h http://www.neokubb.org/feed/
     define_name Northeast Ohio Kubb Club
     define_logo neokc.png
     define_logo_width 128
     define_logo_height 128
-# feed 10m http://ask.planetkubb.com/feed/qa.rss
 feed 15m http://ask.planetkubb.com/feed/questions.rss
     define_name Ask Planet Kubb
+    define_logo kubb-icon_72.png
+    define_logo_width 72
+    define_logo_height 72
+feed 15m http://fraga.planetkubb.com/feed/questions.rss
+    define_name Fraga Planet Kubb
+    define_logo kubb-icon_72.png
+    define_logo_width 72
+    define_logo_height 72
+feed 15m http://fragensie.planetkubb.com/feed/questions.rss
+    define_name Fragen Sie Planet Kubb
     define_logo kubb-icon_72.png
     define_logo_width 72
     define_logo_height 72
@@ -377,37 +390,186 @@ feed 15m http://ask.planetkubb.com/feed/questions.rss
     #define_logo kubb-icon_72.png
     #define_logo_width 72
     #define_logo_height 72
-feed 3h http://thingelstad.com/tag/kubb/feed/
+# feed 1h http://wiki.planetkubb.com/wiki/Special:Ask/-5B-5BCategory:Event-5D-5D-20-5B-5BHas-20event-20type::Tournament-5D-5D-20-5B-5BHas-20event-20status::Confirmed-5D-5D/-3FCreated-20date%3Ddate/limit%3D10/order%3DDESC/sort%3DCreated_date/title%3DPlanet-20Kubb-20Tournament-20Feed/description%3DKubb-20tournaments-20from-20Planet-20Kubb-20Wiki/format%3Drss
+    # allowduplicates true
+    # define_name Planet Kubb Tournaments
+    # define_logo kubb-icon_72.png
+    # define_logo_width 72
+    # define_logo_height 72
+# feed 1h http://wiki.planetkubb.com/wiki/Special:Ask/-5B-5BCategory:Game-5D-5D/-3FCreated-20date%3Ddate/limit%3D5/sort%3DCreated_date/title%3DPlanet-20Kubb-20Games-20Feed/description%3DKubb-20games-20recorded-20on-20Planet-20Kubb-20Wiki/order%3DDESC/format%3Drss
+    # allowduplicates true
+    # define_name Planet Kubb Games
+    # define_logo kubb-icon_72.png
+    # define_logo_width 72
+    # define_logo_height 72
+feed 1h http://thingelstad.com/tag/kubb/feed/
     define_name thingelstad.com
-feed 3h http://gdata.youtube.com/feeds/base/users/sirkubb/uploads?orderby=published&v=2
+feed 3h http://photog.thingelstad.com/tag/kubb/feed/
+    define_name Thingelstad Photography
+feed 1h http://openloop.org/tag/kubb/feed/
+    define_name Open Loop Podcast
+feed 1h http://jimbernard.net/tag/kubb/feed/
+    define_name Superteam Blog
+feed 1h https://garrickvanburen.com/archive/category/kubb/feed/
+    define_name garrickvanburen.com
+feed 1h http://gdata.youtube.com/feeds/base/users/sirkubb/uploads?orderby=published&v=2
     define_name YouTube (SirKubb)
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-feed 3h http://gdata.youtube.com/feeds/base/users/joshfeathers/uploads?q=kubb&orderby=published&v=2
+feed 1h http://gdata.youtube.com/feeds/base/users/5150DT/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (John Oman)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/SkyMotionMedia/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (SkyMotion Media)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/joshfeathers/uploads?q=kubb&orderby=published&v=2
     define_name YouTube (joshfeathers)
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-feed 3h http://gdata.youtube.com/feeds/base/users/jsather4/uploads?q=kubb&orderby=published&v=2
+feed 1h http://gdata.youtube.com/feeds/base/users/Woodsnipers2005/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (Woodsnipers2005)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/LoQubbus/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (LoQubbus)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/kubbisten/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (kubbisten)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/ftek03/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (ftek03)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/wikubb/uploads?orderby=published&v=2
+    define_name YouTube (wikubb)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/jsather4/uploads?q=kubb&orderby=published&v=2
     define_name YouTube (jsather4)
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-feed 3h http://gdata.youtube.com/feeds/base/users/stevelemenop/uploads?q=kubb&orderby=published&v=2
+feed 1h http://gdata.youtube.com/feeds/base/users/stevelemenop/uploads?q=kubb&orderby=published&v=2
     define_name YouTube (stevelemenop)
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-feed 3h http://gdata.youtube.com/feeds/base/users/thekubbmaster/uploads?orderby=published&v=2
+feed 1h http://gdata.youtube.com/feeds/base/users/UChqRLsijjRze3H-RV28gmUg/uploads?q=kubb&orderby=published&v=2
+    define_name YouTube (Ingenieur KubbIngs)
+    define_logo youtube.png
+    define_logo_width 120
+    define_logo_height 85
+feed 1h http://gdata.youtube.com/feeds/base/users/thekubbmaster/uploads?orderby=published&v=2
     define_name YouTube (thekubbmaster)
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-feed 3h http://gdata.youtube.com/feeds/base/users/ValleyKubb/uploads?orderby=published&v=2
+feed 1h http://gdata.youtube.com/feeds/base/users/ValleyKubb/uploads?orderby=published&v=2
     define_name YouTube (ValleyKubb)
     define_logo youtube.png
     define_logo_width 120
     define_logo_height 85
-feed 3h http://kubbchucks.com/feed/
+feed 15m http://pitch.planetkubb.com/post/tag/planet-kubb/feed
+    define_name Planet Kubb Pitch
+    define_logo kubb-icon_72.png
+    define_logo_width 72
+    define_logo_height 72
+feed 15m http://planetkubb.com/feed/
+    define_name Planet Kubb
+    define_logo kubb-icon_72.png
+    define_logo_width 72
+    define_logo_height 72
+#####
+# Planet Kubb Network Sites
+#####
+feed 1h http://kubbchucks.planetkubb.com/feed/
     define_name Kubbchucks
+feed 1h http://kzookubb.planetkubb.com/feed/
+    define_name Kalamazoo Kubb
+feed 1h http://mpls.planetkubb.com/feed/
+    define_name Minneapolis Kubb
+feed 1h http://ringers.planetkubb.com/feed/
+    define_name The Ringers
+feed 1h http://kubbernard.planetkubb.com/feed/
+    define_name KubBernard
+feed 1h http://swedenssons.planetkubb.com/feed/
+    define_name Sweden's Sons
+feed 1h http://kubbicorns.planetkubb.com/feed/
+    define_name Kubbicorns
+feed 1h http://kubbsicles.planetkubb.com/feed/
+    define_name Kubbsicles
+feed 1h http://tadkubbler.planetkubb.com/feed/
+    define_name Tad Kubbler
+feed 1h http://goofykubbers.planetkubb.com/feed/
+    define_name Goofy Kubbers
+feed 1h http://teamknockerheads.planetkubb.com/feed/
+    define_name Team Knockerheads
+feed 1h http://kubbsnipers.planetkubb.com/feed/
+    define_name Kubb Snipers
+feed 1h http://crookedlaketrolls.planetkubb.com/feed/
+    define_name Crooked Lake Trolls
+feed 1h http://kubboholics.planetkubb.com/feed/
+    define_name Kubboholics
+feed 1h http://couleeregionkubb.planetkubb.com/feed/
+    define_name Coulee Region Kubb
+feed 1h http://rubikskubbs.planetkubb.com/feed/
+    define_name Rubiks Kubbs
+feed 1h http://cvkl.planetkubb.com/feed/
+    define_name Chippewa Valley Kubb League
+####
+feed 1h http://baselcitykubb.ch/feed/atom/
+    define_name Basel City Kubb
+feed 1h http://kubbchile.blogspot.com/feeds/posts/default
+    define_name Kubb Chile
+# feed 1h http://twitter.com/statuses/user_timeline/usakubb.rss
+    # define_name USAKubb on Twitter
+#feed 1h http://kubbspel.be/feed
+    #define_name Kubbspel
+    #define_logo kubbspel.png
+    #define_logo_width 90
+    #define_logo_height 90
+feed 1h http://minnesotakubb.com/feed/
+    define_name Minnesota Kubb
+feed 1h http://www.wisconsinkubb.com/blog.rss
+    define_name Wisconsin Kubb
+    define_logo wiskubb_whitebg.jpg
+    define_logo_width 80
+    define_logo_height 89
+feed 1h http://www.laget.se/SIGNALGATAN/Home/NewsRss
+    define_name Signalgatan
+feed 1h http://www.ustream.tv/channel/u-s-national-kubb-championship/videos.rss
+    define_name USA Kubb UStream
+feed 1h http://www.kubb-club.at/index.php?format=feed&amp;type=rss
+    define_name Kubb-Club Austria
+feed 1h http://foxvalleykubb.net/1/feed
+    define_name Fox Valley Kubb
+feed 1h http://kubbcanada.com/feed/
+    define_name Kubb Canada
+feed 1h http://www.teamekeby.se/?feed=rss2
+    define_name Team Ekeby
+feed 1h http://kubboom.com/feed/
+    define_name Team Kubboom
+feed 1h https://sites.google.com/site/mirakelkubbers/home/posts.xml
+    define_name Mirakelkubbers
+feed 1h http://www.kubb-deutschland.de/feed/
+    define_name Kubb Deutschland
+feed 1h http://kubbmilwaukee.com/feed/
+    define_name Milwaukee Kubb Association
+feed 1h http://www.blogtalkradio.com/fvk.rss
+    define_name Fox Valley Kubb Radio
+feed 1h http://www.kettlemorainekubb.com/feed/
+    define_name Kettle Moraine Kubb
+
