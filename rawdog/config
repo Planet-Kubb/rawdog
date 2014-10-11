@@ -375,16 +375,6 @@ feed 15m http://ask.planetkubb.com/feed/questions.rss
     define_logo kubb-icon_72.png
     define_logo_width 72
     define_logo_height 72
-feed 15m http://fraga.planetkubb.com/feed/questions.rss
-    define_name Fraga Planet Kubb
-    define_logo kubb-icon_72.png
-    define_logo_width 72
-    define_logo_height 72
-feed 15m http://fragensie.planetkubb.com/feed/questions.rss
-    define_name Fragen Sie Planet Kubb
-    define_logo kubb-icon_72.png
-    define_logo_width 72
-    define_logo_height 72
 #feed 10m http://wiki.planetkubb.com/w/index.php?title=Special:NewPages&feed=atom&hideliu=&hidepatrolled=&hidebots=1&hideredirs=1&limit=50&namespace=0
     #define_name Planet Kubb Wiki
     #define_logo kubb-icon_72.png
@@ -497,6 +487,8 @@ feed 15m http://planetkubb.com/feed/
 #####
 feed 1h http://kubbchucks.planetkubb.com/feed/
     define_name Kubbchucks
+feed 1h http://chaska.planetkubb.com/feed/
+    define_name Chaska Kubb
 feed 1h http://kzookubb.planetkubb.com/feed/
     define_name Kalamazoo Kubb
 feed 1h http://mpls.planetkubb.com/feed/
@@ -573,3 +565,5 @@ feed 1h http://www.blogtalkradio.com/fvk.rss
 feed 1h http://www.kettlemorainekubb.com/feed/
     define_name Kettle Moraine Kubb
 
+feed 3h http://jones.in/for-a-blog/category/kubb/feed/
+    define_name jones.in
