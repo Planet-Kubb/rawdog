@@ -552,8 +552,6 @@ feed 1h http://kubbcanada.com/feed/
     define_name Kubb Canada
 feed 1h http://www.teamekeby.se/?feed=rss2
     define_name Team Ekeby
-feed 1h http://kubboom.com/feed/
-    define_name Team Kubboom
 feed 1h https://sites.google.com/site/mirakelkubbers/home/posts.xml
     define_name Mirakelkubbers
 feed 1h http://www.kubb-deutschland.de/feed/
