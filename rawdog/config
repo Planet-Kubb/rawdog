@@ -338,7 +338,7 @@ changeconfig true
     # define_logo google.png
     # define_logo_width 127
     # define_logo_height 40
-feed 1h http://kubbklubb.wordpress.com/feed/
+feed 1h https://kubbklubb.wordpress.com/feed/
     define_name Kubb Klubb
 # feed 1h http://kubbcollective.com/feed/
 # define_name Kubb Collective
@@ -507,8 +507,6 @@ feed 1h http://tadkubbler.planetkubb.com/feed/
     define_name Tad Kubbler
 feed 1h http://goofykubbers.planetkubb.com/feed/
     define_name Goofy Kubbers
-feed 1h http://teamknockerheads.planetkubb.com/feed/
-    define_name Team Knockerheads
 feed 1h http://kubbsnipers.planetkubb.com/feed/
     define_name Kubb Snipers
 feed 1h http://crookedlaketrolls.planetkubb.com/feed/
