@@ -544,8 +544,8 @@ feed 1h http://www.ustream.tv/channel/u-s-national-kubb-championship/videos.rss
     define_name USA Kubb UStream
 feed 1h http://www.kubb-club.at/index.php?format=feed&amp;type=rss
     define_name Kubb-Club Austria
-feed 1h http://foxvalleykubb.net/1/feed
-    define_name Fox Valley Kubb
+#feed 1h http://foxvalleykubb.net/1/feed
+#    define_name Fox Valley Kubb
 feed 1h http://kubbcanada.com/feed/
     define_name Kubb Canada
 feed 1h http://www.teamekeby.se/?feed=rss2
@@ -556,7 +556,7 @@ feed 1h http://www.kubb-deutschland.de/feed/
     define_name Kubb Deutschland
 feed 1h http://kubbmilwaukee.com/feed/
     define_name Milwaukee Kubb Association
-feed 1h http://www.blogtalkradio.com/fvk.rss
+feed 1h http://www.blogtalkradio.com/fvk/podcast
     define_name Fox Valley Kubb Radio
 feed 1h http://www.kettlemorainekubb.com/feed/
     define_name Kettle Moraine Kubb
