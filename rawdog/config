@@ -354,7 +354,9 @@ feed 1h http://desmoineskubb.com/blog.rss
     define_logo dsmkubblogo.jpg
     define_logo_width 280
     define_logo_height 188
-feed 1h http://vimeo.com/channels/kubb/videos/rss
+feed 4h http://seattlekubb.blogspot.com/feeds/posts/default
+    define_name Seattle Kubb League
+feed 1h https://vimeo.com/channels/kubb/videos/rss
     define_name Vimeo Kubb Channel
 feed 3h http://feeds.pinboard.in/rss/t:kubb
     define_name Pinboard Kubb
