@@ -489,6 +489,8 @@ feed 15m http://planetkubb.com/feed/
 #####
 feed 1h http://kubbchucks.planetkubb.com/feed/
     define_name Kubbchucks
+feed 1h http://sfkubb.planetkubb.com/feed/
+    define_name Sioux Falls Kubb
 feed 1h http://chaska.planetkubb.com/feed/
     define_name Chaska Kubb
 feed 1h http://kzookubb.planetkubb.com/feed/
