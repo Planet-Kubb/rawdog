@@ -542,8 +542,10 @@ feed 1h http://www.wisconsinkubb.com/blog.rss
     define_logo wiskubb_whitebg.jpg
     define_logo_width 80
     define_logo_height 89
-feed 1h http://www.laget.se/SIGNALGATAN/Home/NewsRss
-    define_name Signalgatan
+feed 1h http://www.laget.se/KubbGotland/Home/NewsRss
+    define_name Kubb Gotland
+feed 1h http://www.laget.se/RGIF_kubb/Home/NewsRss
+    define_name Ranneslovs GIF Kubb
 feed 1h http://www.ustream.tv/channel/u-s-national-kubb-championship/videos.rss
     define_name USA Kubb UStream
 feed 1h http://www.kubb-club.at/index.php?format=feed&amp;type=rss
