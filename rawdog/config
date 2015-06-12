@@ -398,8 +398,8 @@ feed 1h http://thingelstad.com/tag/kubb/feed/
     define_name thingelstad.com
 feed 3h http://photog.thingelstad.com/tag/kubb/feed/
     define_name Thingelstad Photography
-feed 1h http://openloop.org/tag/kubb/feed/
-    define_name Open Loop Podcast
+#feed 1h http://openloop.org/tag/kubb/feed/
+#    define_name Open Loop Podcast
 feed 1h http://jimbernard.net/tag/kubb/feed/
     define_name Superteam Blog
 feed 1h https://garrickvanburen.com/archive/category/kubb/feed/
