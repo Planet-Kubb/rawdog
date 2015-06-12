@@ -404,76 +404,76 @@ feed 1h http://jimbernard.net/tag/kubb/feed/
     define_name Superteam Blog
 feed 1h https://garrickvanburen.com/archive/category/kubb/feed/
     define_name garrickvanburen.com
-feed 1h http://gdata.youtube.com/feeds/base/users/sirkubb/uploads?orderby=published&v=2
-    define_name YouTube (SirKubb)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/5150DT/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (John Oman)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/SkyMotionMedia/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (SkyMotion Media)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/joshfeathers/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (joshfeathers)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/Woodsnipers2005/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (Woodsnipers2005)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/LoQubbus/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (LoQubbus)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/kubbisten/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (kubbisten)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/ftek03/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (ftek03)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/wikubb/uploads?orderby=published&v=2
-    define_name YouTube (wikubb)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/jsather4/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (jsather4)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/stevelemenop/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (stevelemenop)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/UChqRLsijjRze3H-RV28gmUg/uploads?q=kubb&orderby=published&v=2
-    define_name YouTube (Ingenieur KubbIngs)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/thekubbmaster/uploads?orderby=published&v=2
-    define_name YouTube (thekubbmaster)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
-feed 1h http://gdata.youtube.com/feeds/base/users/ValleyKubb/uploads?orderby=published&v=2
-    define_name YouTube (ValleyKubb)
-    define_logo youtube.png
-    define_logo_width 120
-    define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/sirkubb/uploads?orderby=published&v=2
+    #define_name YouTube (SirKubb)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/5150DT/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (John Oman)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/SkyMotionMedia/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (SkyMotion Media)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/joshfeathers/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (joshfeathers)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/Woodsnipers2005/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (Woodsnipers2005)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/LoQubbus/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (LoQubbus)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/kubbisten/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (kubbisten)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/ftek03/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (ftek03)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/wikubb/uploads?orderby=published&v=2
+    #define_name YouTube (wikubb)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/jsather4/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (jsather4)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/stevelemenop/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (stevelemenop)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/UChqRLsijjRze3H-RV28gmUg/uploads?q=kubb&orderby=published&v=2
+    #define_name YouTube (Ingenieur KubbIngs)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/thekubbmaster/uploads?orderby=published&v=2
+    #define_name YouTube (thekubbmaster)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
+#feed 1h http://gdata.youtube.com/feeds/base/users/ValleyKubb/uploads?orderby=published&v=2
+    #define_name YouTube (ValleyKubb)
+    #define_logo youtube.png
+    #define_logo_width 120
+    #define_logo_height 85
 feed 15m http://pitch.planetkubb.com/post/tag/planet-kubb/feed
     define_name Planet Kubb Pitch
     define_logo kubb-icon_72.png
